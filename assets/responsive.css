@@ -1,97 +1,118 @@
 /* ================= RESPONSIVE DESIGN ================= */
 
-/* Tablets (≤ 992px) */
+/* Tablets (max-width: 992px) */
 @media (max-width: 992px) {
+  nav {
+    padding: 15px 30px;
+  }
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
-    padding:150px 100px;
-   
+    padding: 120px 30px 0;
   }
-
   .hero-left {
     padding-right: 0;
   }
-
   .hero-left h1 {
     font-size: 36px;
-    line-height: 48px;
+    line-height: 46px;
   }
-
   .hero-left p {
     padding-right: 0;
   }
-
   .hero-right {
     margin-top: 30px;
+    height: 400px;
   }
-
-  nav ul {
+  .comp-info .mn {
     display: none;
   }
-
-  .exp {
-    margin: 15px auto;
+  .prebuilt-main-container {
+    grid-template-columns: 25% 75%;
+    padding: 40px 20px;
   }
-
-  .comp-info .mn {
+  .right-cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .exp {
+    justify-content: center;
+    margin: 0px auto;
+  }
+  ul {
     display: none;
   }
 }
 
-/* Mobile (≤ 600px) */
-@media (max-width: 600px) {
+/* Mobile (max-width: 576px) */
+@media (max-width: 576px) {
   nav {
     justify-content: center;
+    padding: 10px 20px;
   }
-
-  nav ul,
+  ul,
   .buy {
     display: none;
   }
-
+  .logo {
+    font-size: 28px;
+  }
+  .exp {
+    justify-content: center;
+    margin: 0px auto;
+  }
   .hero-left h1 {
     font-size: 28px;
     line-height: 38px;
   }
-
   .hero-left p {
     font-size: 14px;
+    margin: 20px 0;
   }
-
-  .exp {
-    margin: 15px auto;
+  .hero-right {
+    height: 300px;
   }
-
   .comp-info {
-    padding: 20px 30px;
+    padding: 30px 60px;
   }
-
-  .comp-info .none {
-    display: none;
+  .comp-info .none{
+   display: none;
   }
-
-  /* Prebuilt Section */
+  .comp-info h1 {
+    font-size: 32px;
+  }
+  .comp-info p {
+    font-size: 18px;
+  }
   .prebuilt-web {
     top: -40px;
-    padding: 40px 10px;
+    padding: 40px 15px;
   }
-
   .heading-section .ninty {
     font-size: 70px;
     top: -10px;
   }
-
   .heading-section .heading {
     top: 50px;
     font-size: 22px;
     padding: 5px 10px;
   }
-
   .heading-section p {
     top: 90px;
     font-size: 13px;
     line-height: 20px;
     max-width: 95%;
+  }
+  .prebuilt-main-container {
+    grid-template-columns: 1fr; 
+  }
+  .left-bar-container {
+    position: relative;
+    top: 0;
+    height: auto;
+    margin-bottom: 20px;
+    display: none;
+  }
+  .right-cards-container {
+    grid-template-columns: 1fr; 
   }
 }
