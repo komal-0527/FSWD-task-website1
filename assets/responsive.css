@@ -1,0 +1,97 @@
+/* ================= RESPONSIVE DESIGN ================= */
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding:150px 100px;
+   
+  }
+
+  .hero-left {
+    padding-right: 0;
+  }
+
+  .hero-left h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .hero-left p {
+    padding-right: 0;
+  }
+
+  .hero-right {
+    margin-top: 30px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .exp {
+    margin: 15px auto;
+  }
+
+  .comp-info .mn {
+    display: none;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav ul,
+  .buy {
+    display: none;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+  }
+
+  .exp {
+    margin: 15px auto;
+  }
+
+  .comp-info {
+    padding: 20px 30px;
+  }
+
+  .comp-info .none {
+    display: none;
+  }
+
+  /* Prebuilt Section */
+  .prebuilt-web {
+    top: -40px;
+    padding: 40px 10px;
+  }
+
+  .heading-section .ninty {
+    font-size: 70px;
+    top: -10px;
+  }
+
+  .heading-section .heading {
+    top: 50px;
+    font-size: 22px;
+    padding: 5px 10px;
+  }
+
+  .heading-section p {
+    top: 90px;
+    font-size: 13px;
+    line-height: 20px;
+    max-width: 95%;
+  }
+}
