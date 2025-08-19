@@ -22,7 +22,7 @@ header {
   width: 100%;
   min-height: 110vh;
   background-color: var(--white-color);
-  background-color: rgb(185, 232, 216);
+/*   background-color: rgb(185, 232, 216); */
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
   padding-bottom: 70px;
@@ -37,11 +37,11 @@ nav {
   justify-content: space-between;
   background-color: #f0eaea;
   position: fixed;
-  top: 0; /* ensure it sticks at very top */
+  top: 0; 
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: 80px; /* define navbar height */
+  height: 80px;
 }
 
 /* hero section */
@@ -49,8 +49,8 @@ nav {
   display: grid;
   grid-template-columns: 50% 50%;
   align-items: center;
-  padding: 20px 50px 0; /* normal inner padding */
-  margin-top: 30px; /* push hero below fixed navbar */
+  padding: 20px 50px 0; 
+  margin-top: 30px; 
 }
 
 /* navbar */
@@ -59,7 +59,7 @@ nav {
   padding: 20px 50px;
   align-items: center;
   justify-content: space-between;
-  background-color: #f0eaea;
+/*   background-color: #f0eaea; */
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -225,7 +225,7 @@ comp info
   justify-content: space-between;
   position: relative;
   top: -50px;
-  z-index: 5; /* must be above hero bg */
+  z-index: 5;
   border-radius: 20px;
 }
 .comp-info h1 {
@@ -244,7 +244,7 @@ prebuilt-website
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   position: relative;
-  z-index: 6; /* should be above comp-info */
+  z-index: 6; 
   top: -100px;
   padding-top: 100px;
   background-color: var(--white-color);
@@ -268,8 +268,8 @@ prebuilt-website
   position: absolute;
   top: 90px;
   font-size: 35px;
-  background-color: rgba(255, 255, 255, 0.7); /* semi-transparent white */
-  backdrop-filter: blur(5px); /* blur the background behind */
+  background-color: rgba(255, 255, 255, 0.7); 
+  backdrop-filter: blur(5px); 
 }
 
 .heading-section p {
@@ -283,12 +283,12 @@ prebuilt-website
 
 .prebuilt-main-container {
   display: grid;
-  grid-template-columns: 20% 77%; /* sidebar 20%, content 80% */
+  grid-template-columns: 20% 77%; 
   gap: 20px;
   padding: 50px 20px;
   position: relative;
-  height: auto; /* grows naturally with content */
-  align-items: flex-start; /* aligns sidebar & content at top */
+  height: auto;
+  align-items: flex-start; 
 }
 /* ============================== */
 /* ==== left-bar-container ==== */
@@ -303,7 +303,6 @@ prebuilt-website
   width: 100%;
   padding-right: 20px;
   height: calc(100vh - 100px);
-  /* full viewport height minus navbar */
   position: sticky;
   top: 100px;
   align-self: flex-start;
@@ -400,3 +399,4 @@ prebuilt-website
 .card:hover {
   transform: scale(1.02);
 }
+
