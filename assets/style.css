@@ -29,20 +29,7 @@ header {
   position: relative;
   z-index: 10;
 }
-/* navbar */
-nav {
-  display: flex;
-  padding: 20px 50px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #f0eaea;
-  position: fixed;
-  top: 0; 
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  height: 80px;
-}
+
 
 /* hero section */
 .hero {
@@ -59,7 +46,6 @@ nav {
   padding: 20px 50px;
   align-items: center;
   justify-content: space-between;
-/*   background-color: #f0eaea; */
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -399,4 +385,5 @@ prebuilt-website
 .card:hover {
   transform: scale(1.02);
 }
+
 
