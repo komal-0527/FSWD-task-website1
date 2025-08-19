@@ -49,6 +49,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  background-color:white;
 }
 .nav-right {
   display: flex;
@@ -385,5 +386,6 @@ prebuilt-website
 .card:hover {
   transform: scale(1.02);
 }
+
 
 
