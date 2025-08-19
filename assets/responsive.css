@@ -104,12 +104,9 @@
   }
   .prebuilt-main-container {
     grid-template-columns: 1fr; 
+    margin-top: 90px;
   }
   .left-bar-container {
-    position: relative;
-    top: 0;
-    height: auto;
-    margin-bottom: 20px;
     display: none;
   }
   .right-cards-container {
