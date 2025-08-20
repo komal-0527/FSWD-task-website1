@@ -1,22 +1,23 @@
 /* ===============================
-   RESPONSIVE DESIGN
+   Tablets (max-width: 992px)
 ================================= */
-
-/* ----------- Tablets (max-width: 992px) ----------- */
 @media (max-width: 992px) {
-  /* Navbar */
   nav {
     padding: 15px 30px;
   }
-  ul {
-    display: none; /* hide menu */
+  nav ul {
+    display: none;
   }
 
-  /* Hero Section */
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
-    padding: 120px 30px 0;
+    padding: 120px 30px 0px;
+  }
+
+  .hero-right {
+    height: 400px;
+    margin-top: 30px;
   }
   .hero-left {
     padding-right: 0;
@@ -28,33 +29,28 @@
   .hero-left p {
     padding-right: 0;
   }
-  .hero-right {
-    margin-top: 30px;
-    height: 400px;
-  }
-
-  /* Experience Icons */
   .exp {
-    justify-content: center;
-    margin: 0 auto;
+    margin: 0px auto;
   }
 
-  /* Company Info */
-  .comp-info .mn {
-    display: none;
+  .comp-info {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
   }
 
-  /* Prebuilt Websites Section */
   .prebuilt-main-container {
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 1fr;
     padding: 40px 20px;
+  }
+  .left-bar-container {
+    display: none;
   }
   .right-cards-container,
   .reason-buy-cards {
     grid-template-columns: 1fr 1fr;
   }
 
-  /* Reason to Buy Section */
   .reason-buy {
     padding: 80px 30px;
   }
@@ -63,57 +59,32 @@
   }
   .reason-buy .heading-section .heading {
     font-size: 28px;
-    margin-top: -60px;
-  }
-  .reason-buy .heading-section p {
-    font-size: 15px;
-    line-height: 24px;
-    max-width: 600px;
+    margin-top: -80px;
   }
 
-  /* Feature Section */
   .feature {
     padding: 60px 30px;
   }
-  .feature .heading h1 {
-    font-size: 32px;
-  }
-  .feature .heading p {
-    font-size: 14px;
-    margin-bottom: 40px;
-  }
   .card-row1,
+  .card-row2,
   .card-row3 {
-    grid-template-columns: 1fr; /* stack big card full width */
-  }
-  .card-row2 {
-    grid-template-columns: 1fr 1fr; /* two per row */
-  }
-  .big-card {
-    flex-direction: column;
-    text-align: center;
-  }
-  .big-card img {
-    width: 100%;
-  }
-  .big-card-content {
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/* ----------- Mobile (max-width: 576px) ----------- */
+/* ===============================
+   Mobile (max-width: 576px)
+================================= */
 @media (max-width: 576px) {
-  /* Navbar */
   nav {
     justify-content: center;
     padding: 10px 20px;
   }
-  ul,
-  .buy {
-    display: none;
-  }
   .logo {
     font-size: 28px;
+  }
+  .buy {
+    display: none;
   }
 
   /* Hero */
@@ -136,20 +107,9 @@
   .hero-right {
     height: 300px;
   }
-
-  /* Experience Icons */
-  .exp {
-    justify-content: center;
-    margin: 0 auto;
-  }
-
-  /* Company Info */
-  .comp-info {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px 30px;
-    height: auto;
-  }
+.exp{
+  margin: 0px auto;
+}
   .comp-info h1 {
     font-size: 32px;
   }
@@ -157,59 +117,29 @@
     font-size: 18px;
   }
 
-  /* Prebuilt Websites */
-  .prebuilt-main-container {
+  .right-cards-container,
+  .reason-buy-cards {
     grid-template-columns: 1fr;
-    margin-top: 60px;
-    padding: 30px 15px;
-  }
-  .left-bar-container {
-    display: none;
-  }
-  .right-cards-container {
-    grid-template-columns: 1fr; /* single column */
     gap: 20px;
+    justify-items: center;
+  }
+  .r-card {
+    padding: 30px 20px;
   }
 
-  /* Reason to Buy Section */
-  .reason-buy {
-    padding: 60px 15px;
-  }
   .reason-buy .heading-section .six {
     font-size: 90px;
   }
   .reason-buy .heading-section .heading {
     font-size: 22px;
-    top: 60px;
+    margin-top: -60px;
   }
   .reason-buy .heading-section p {
     font-size: 14px;
-    line-height: 22px;
-    top: 110px;
-    max-width: 100%;
-  }
-  .reason-buy-cards {
-    grid-template-columns: 1fr; /* single column on mobile */
-    gap: 20px;
-  }
-  .r-card {
-    padding: 30px 20px;
-  }
-  .r-card h1 {
-    font-size: 20px;
-  }
-  .r-card p {
-    font-size: 13px;
-    line-height: 20px;
   }
 
-  /* Feature Section */
-  .feature {
-    padding: 40px 15px;
-  }
   .feature .heading h1 {
     font-size: 24px;
-    line-height: 32px;
   }
   .feature .heading p {
     font-size: 13px;
@@ -218,21 +148,84 @@
   .card-row1,
   .card-row2,
   .card-row3 {
-    grid-template-columns: 1fr; /* one card per row */
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
-  .big-card {
-    flex-direction: column; /* stack image + content */
-    gap: 15px;
+}
+
+/* ===============================
+   Extra Small Devices (max-width: 400px)
+================================= */
+@media (max-width: 400px) {
+  nav {
+    padding: 8px 15px;
+  }
+  .logo {
+    font-size: 24px;
+  }
+
+  /* Hero Section - Centered */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 50px 10px;
+    min-height: 75vh;
   }
-  .big-card img {
-    width: 100%;
+  .hero-left h1 {
+    font-size: 24px;
+    line-height: 32px;
   }
-  .big-card-content h1 {
+  .hero-left p {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 15px 0;
+  }
+  .hero-right {
+    height: 250px;
+    margin-top: 15px;
+  }
+
+  .comp-info h1 {
+    font-size: 28px;
+  }
+  .comp-info p {
+    font-size: 16px;
+  }
+
+  .right-cards-container,
+  .reason-buy-cards {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 15px;
+  }
+  .r-card {
+    padding: 20px 10px;
+  }
+  .r-card h1 {
+    font-size: 16px;
+  }
+  .r-card p {
+    font-size: 12px;
+  }
+
+  .reason-buy .heading-section .six {
+    font-size: 70px;
+  }
+  .reason-buy .heading-section .heading {
+    font-size: 20px;
+    margin-top: -40px;
+  }
+  .reason-buy .heading-section p {
+    font-size: 12px;
+  }
+
+  .feature .heading h1 {
     font-size: 20px;
   }
-  .big-card-content p {
-    font-size: 14px;
-    line-height: 22px;
+  .feature .heading p {
+    font-size: 12px;
   }
 }
